@@ -1,0 +1,946 @@
+/* BODY */
+
+body {
+    position: relative;
+    margin: 0 auto;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: rgb(235, 235, 235);
+    justify-content: space-around;
+}
+
+.container {
+    width: 70%;
+    margin-left: 15%;
+}
+
+/* HEADER */
+
+
+.heder {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-side {
+    display: flex;
+    align-items: left;
+}
+
+.right-side {
+    display: flex;
+    align-items: center;
+}
+
+.right-side .moj-limundo {
+    position: relative;  
+}
+
+.right-side .dropdown-items {
+    position: absolute;
+    display: none;
+    width: 228px;
+    margin-left: -60px;
+    margin-top: 5px;
+    z-index: 2;
+}
+
+/* HEADER - DEKORACIJA */
+
+.kupi a, .dropdown-button a, .forum a, .pomoc a {
+    border: 2px solid transparent;
+    border-radius: 6px;
+    padding: 5px 20px 5px 20px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(92, 92, 92);
+}
+
+.kupi:hover a, .dropdown-button:hover a, .forum:hover a, .pomoc:hover a {
+    color: white;
+    font-weight: bold;
+    background-color: rgba(144, 199, 35, 0.959);
+    border: 2px solid white;
+    transition: 0s;
+}
+
+.moj-limundo:hover .dropdown-items {
+    display: block;
+}
+
+.moj-limundo:hover .dropdown-items a {
+   text-decoration: none;
+   align-items: none;
+   font-size: 14px;
+   padding-left: 20px;
+}
+
+.dropdown-items li {
+    display: block;
+    text-align: left;
+    width: 228px;
+    cursor: pointer;
+    padding-bottom: 1px;  
+    padding-top: 1px;  
+    margin-left: -40px;
+}
+
+.dropdown-items ul {
+    margin-left: 20px;
+    margin-top: 3px;   
+    height: 290px;
+    border: 2px solid white;
+    width: 188px;
+    border-radius: 6px;
+    background-color: rgb(219, 219, 219);
+}
+
+.divider {
+    border-top: 1px dotted rgb(150, 150, 150);
+    border-bottom: 1px dotted rgb(150, 150, 150);
+    height:0.01em;
+    width: 90%;
+}
+
+.dropdown-item-probajte a {
+    font-weight: bold;
+    color:rgb(116, 180, 43);
+}
+
+.dropdown-item-probajte:hover, .dropdown-item-probajte:hover a{
+    color: white;
+    background-color: rgb(144, 199, 35);
+    cursor: pointer;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.dropdown-item a {
+    color:rgb(95, 95, 95);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.dropdown-item:hover {
+    background-color: rgba(144, 199, 35);
+}
+
+.dropdown-item:hover a {
+    color: white;
+}
+
+.dropdown-item-ducan a{
+    color: rgb(95, 95, 95);
+}
+
+.dropdown-item-ducan:hover, .dropdown-item-ducan:hover a{
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: rgb(144, 199, 35);
+    color: white;
+}
+
+/* NAVIGACIJA */
+
+.navigation {
+    display: flex;
+    position: sticky;
+    top: -1px;
+    z-index: 1;
+    width: 1662px;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: -21.3%;
+    height: 50px;
+    background-color: rgb(143, 143, 143);
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
+.navigation div {
+    display: flex;
+}
+
+.navigation .navigation-left {
+    display: flex;
+    justify-content: space-between;
+    margin-left: -45px;
+}
+
+.navigation .navigation-right {
+    display: flex;
+    justify-content: space-between;
+    margin-right: -45px;
+}
+
+.besplatno {
+    margin-left: 3px;
+    margin-right: 142px;
+    width: 241px;
+    align-items: center;
+    height: 28px;
+    margin-top: 1px;
+}
+
+.besplatno a, .registracija a, .ulaz a {
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+    align-items: center;
+    color: white;
+}
+
+.besplatno a {
+    padding-left: 14px;
+}
+
+.placeholder {
+    width: 200px;
+    height: 22px;   
+    border: 2px solid transparent;
+    margin-top: 3px;
+}
+
+.placeholder:hover {
+    border: 2px solid rgb(55, 118, 255);    
+} 
+
+input:focus {
+    border: 2px solid rgb(55, 118, 255);
+}
+
+
+
+.trazi {
+    margin-left: 1px;
+    margin-top: 2px;
+    width: 80px;
+    height: 31px;
+    align-items: center;    
+    
+}
+
+.registracija {
+    margin-right: 22px;
+    margin-left: 5px;
+    height: 28px;
+    align-items: center;
+}
+
+.ulaz {
+    margin-right: 4px;
+    height: 28px;
+}
+
+.ulaz a {
+    padding-top: 6px;
+}
+
+.besplatno a, .registracija a, .ulaz a {
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+    align-items: center;
+    color: white;
+}
+
+.besplatno {
+    background-color: rgb(144, 199, 35);
+    border-top: 1px solid rgb(55, 107, 7);
+    border-right: 1px solid rgb(55, 107, 7);
+    border-bottom: 4px solid rgb(55, 107, 7);
+    border-left: 1px solid rgb(55, 107, 7);
+    border-radius: 5px;
+    color: white;
+}
+
+.besplatno:hover {
+    background-color: rgb(144, 199, 35);
+    border-top: 4px solid rgb(55, 107, 7);
+    border-right: 1px solid rgb(55, 107, 7);
+    border-bottom: 1px solid rgb(55, 107, 7);
+    border-left: 1px solid rgb(55, 107, 7);
+    border-radius: 5px;
+    color: white;
+}
+
+
+.trazi {
+    background-color: rgb(55, 118, 255);
+    border-top: 1px solid rgb(20, 50, 148);
+    border-right: 1px solid rgb(20, 50, 148);
+    border-bottom: 4px solid rgb(20, 50, 148);
+    border-left: 1px solid rgb(20, 50, 148);
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.trazi:hover {
+    background-color: rgb(55, 118, 255);
+    border-top: 4px solid rgb(20, 50, 148);
+    border-right: 1px solid rgb(20, 50, 148);
+    border-bottom: 1px solid rgb(20, 50, 148);
+    border-left: 1px solid rgb(20, 50, 148);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.registracija {
+    background-color: rgb(255, 95, 55);
+    border-top: 1px solid rgb(150, 30, 21);
+    border-right: 1px solid rgb(150, 30, 21);
+    border-bottom: 4px solid rgb(150, 30, 21);
+    border-left: 1px solid rgb(150, 30, 21);
+    border-radius: 5px;
+}
+
+.registracija:hover {
+    background-color: rgb(255, 95, 55);
+    border-top: 4px solid rgb(150, 30, 21);
+    border-right: 1px solid rgb(150, 30, 21);
+    border-bottom: 1px solid rgb(150, 30, 21);
+    border-left: 1px solid rgb(150, 30, 21);
+    border-radius: 5px;
+}
+
+.ulaz {
+    background-color: rgb(171, 62, 214);
+    border-top: 1px solid rgb(105, 16, 139);
+    border-right: 1px solid rgb(105, 16, 139);
+    border-bottom: 4px solid rgb(105, 16, 139);
+    border-left: 1px solid rgb(105, 16, 139);
+    border-radius: 5px;
+}
+
+.ulaz:hover {
+    background-color: rgb(171, 62, 214);
+    border-top: 4px solid rgb(95, 8, 129);
+    border-right: 1px solid rgb(95, 8, 129);
+    border-bottom: 1px solid rgb(95, 8, 129);
+    border-left: 1px solid rgb(95, 8, 129);
+    border-radius: 5px;
+}
+
+/* GLAVNA STRANA - CENTAR - SECOND */
+
+    /* GLAVNA STRANA */
+
+.main-all {
+    display: flex;
+    margin-top: 14px;
+}
+    
+.main-center-all {
+    height: 100%;
+}
+    
+        /* START - LEVI DEO */
+    
+.main-left-all {
+    height: 940px;
+}    
+    
+.main-left-menu {
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgb(143, 143, 143);   
+    border-radius: 6px;
+    height: 534px;
+    margin-left: -2px;
+    width: 240px;
+}
+    
+.main-left-menu a {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    padding-left: 10px;
+}
+    
+.main-left-menu li {
+    display: block;
+    width: 226px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-radius: 4px;
+}
+    
+.main-left-menu-content:hover {
+    background-color: white;
+    color: rgb(43, 43, 43);
+    cursor: pointer;
+}
+    
+.main-left-menu-content:hover a {
+    background-color: white;
+    color: rgb(65, 65, 65);
+}
+    
+.main-left-menu ul {
+    margin-top: 7px;
+    margin-left: -33px;
+    border-radius: 5px;  
+}
+.main-left-img img {
+    width: 230px;
+    height: 387px;
+    margin-top: 15px;
+    margin-left: 5px;
+}
+    
+        /* END - LEVI DEO */
+    
+    /* START - CENTRALNI DEO */
+    
+.main-center {
+    margin-left: 36px;
+    width: 600px;
+}
+
+
+            /* PRVI */
+
+    
+.main-center-first {
+    display: flex;
+    width: 600px;
+    height: 105px;
+    align-items: center;
+    padding-bottom: 10px;
+}
+    
+.main-center-first p {
+    font-size: 13px;
+}
+    
+.main-center-first article, aside {
+    color :rgb(61, 61, 61);
+    padding-bottom: 10px;
+}
+   
+          /* DRUGI */
+
+#slider {
+    overflow: hidden;
+}
+        
+#slider figure {
+    width: 500%;
+    position: relative;
+    left:0;
+    margin: 0;
+    animation: 20s slider infinite;
+    z-index: 0;
+}
+                        
+#slider img {
+    width: 20%;
+    float: left;
+}
+                        
+@keyframes slider {
+    0% { left:0; }
+    20% { left:0; }
+    25% { left:-100%; }
+    45% { left:-100%; }
+    50% { left:-200%; }
+    70% { left:-200%; }
+    75% { left:-300%; }
+    95% { left:-300%; }
+    100% { left:-400%; }
+}          
+
+
+       /* TRECI */
+   
+.main-center-third {
+    border: 1px solid black;
+    height: 300px;
+    margin-top: 15px;
+}
+
+.main-center-third-button-bar {
+    display: flex;
+    margin-top: 270px;
+    width: 100%;
+}
+
+.top-naslovna {
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    background-color: rgb(171, 62, 214);
+    border-top: 1px solid rgb(105, 16, 139);
+    border-right: 1px solid rgb(105, 16, 139);
+    border-bottom: 4px solid rgb(105, 16, 139);
+    border-left: 1px solid rgb(105, 16, 139);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.top-naslovna:hover {
+    background-color: rgb(171, 62, 214);
+    border-top: 4px solid rgb(95, 8, 129);
+    border-right: 1px solid rgb(95, 8, 129);
+    border-bottom: 1px solid rgb(95, 8, 129);
+    border-left: 1px solid rgb(95, 8, 129);
+    border-radius: 5px;
+}
+
+.top-naslovna a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+.top-naslovna div {
+    margin-top: 2px;
+}
+
+.page-selector {
+    width: 50%;
+}
+
+.pagination {
+    display: flex;
+    margin-left: 365px;
+}
+
+.pagination-left, .pagination-right {
+    width: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(171, 62, 214);
+    border-top: 1px solid rgb(105, 16, 139);
+    border-right: 1px solid rgb(105, 16, 139);
+    border-bottom: 4px solid rgb(105, 16, 139);
+    border-left: 1px solid rgb(105, 16, 139);
+    border-radius: 5px;
+}
+
+.pagination-left:hover, .pagination-right:hover {
+    background-color: rgb(171, 62, 214);
+    border-top: 4px solid rgb(95, 8, 129);
+    border-right: 1px solid rgb(95, 8, 129);
+    border-bottom: 1px solid rgb(95, 8, 129);
+    border-left: 1px solid rgb(95, 8, 129);
+    border-radius: 5px;
+}
+
+.pagination-left a, .pagination-right a {
+    display: flex;
+    padding-top: 3px;
+    text-decoration: none;
+    color: white;
+    justify-content: center;
+}
+
+                /*cetvrti*/
+
+
+.main-center-fourth {
+    display: flex;
+    height: 270px;
+    margin-top: 15px;
+    background-color: rgb(143, 143, 143);
+    border-radius: 5px;
+}
+
+.gornji {
+    display: flex;
+    border-bottom: 1px dashed rgb(61, 61, 61);
+    width: 600px;
+    height: 40px;
+}
+
+.preporucujemo {
+    margin-top: 10px;
+    margin-left: 20px;
+    color: rgb(20, 50, 148);
+    font-weight: bold;
+}
+
+.prikazi-sve {
+   margin-left: 380px;
+   margin-top: 10px;
+}
+
+.prikazi-sve a {
+    text-decoration: none;
+    font-size: 16px;
+    color: rgb(20, 50, 148);
+}
+
+.prikazi-sve a:hover {
+    text-decoration: underline;
+}
+
+
+                /* DESNI DEO */
+
+            
+.main-right-all {
+    width: 250px;
+    margin-left: 35px;
+    height: 950px;
+}
+
+.saveti {
+    margin-top: -14px;
+    height: 110px;
+}
+
+.saveti a {
+    text-decoration: none;
+    font-size: 12px;
+    color: rgb(20, 50, 148);
+}
+
+.saveti a:hover {
+    text-decoration: underline;
+    color: rgb(20, 50, 148);
+}
+
+.saveti h3 {
+    color: rgb(36, 76, 206);
+    
+}
+
+.saveti li {
+    display: block;
+    padding-top: 3px;
+    padding-bottom: 3px;
+   
+}
+
+.saveti ul {
+    margin-left: -40px;
+    margin-top: -15px;
+
+}
+
+
+
+
+
+
+
+
+.brzi-linkovi {
+    
+    background-color: rgb(143, 143, 143);
+    height: 190px;
+    border-radius: 7px; 
+    padding-top: -2px;
+    border: 2px solid white;
+    width: 249px;
+    margin-left: 0px;
+}
+
+.brzi-linkovi a {
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.brzi-linkovi li {
+    list-style-type: square;
+    margin-left: 20px;
+    padding-bottom: 4px;
+    padding-top: 4px;
+    width: 212px;
+    margin-top: -3px;
+   
+}
+
+.brzi-linkovi div {
+    width: 233px;
+    margin-top: 2px;
+    margin-left: 1px;
+    border-radius: 5px;
+}
+    
+.brzi-linkovi ul {
+    margin-left: -33px;
+    margin-top: 10px;
+    height: 170px;
+}
+
+.brzi-linkovi div:hover a {
+    background-color: white;
+    color: rgb(43, 43, 43);
+}
+
+.brzi-linkovi div:hover {
+    background-color: white;
+    cursor: pointer;
+}
+
+
+.brzi-linkovi a:hover {
+    color: rgb(43, 43, 43);
+}
+
+.link-1 {
+    color: rgb(105, 16, 139);
+}
+
+.link-2 {
+    color: rgb(233, 219, 21);
+}
+
+.link-3 {
+    color: rgb(224, 9, 9);
+}
+
+.link-4 {
+    color: rgb(38, 80, 216);
+}
+
+.link-5 {
+    color: rgb(78, 196, 31);
+}
+
+.link-6 {
+    color: rgb(194, 68, 188);
+}
+
+.link-7 {
+    color: rgb(55, 151, 168);
+}
+
+
+
+
+
+
+.aktuelno { 
+    margin-top: 16px;
+    margin-left: 11px;
+}
+
+.type1 {
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+.type3 {
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+.aktuelno img:hover {
+    opacity: 0.7;
+    z-index: 0;
+}
+        /* FOOTER */
+
+.awards {
+    margin-top: 50px;
+}
+
+.awards-images {
+    display: flex;
+    border-top: 2px solid rgb(43, 43, 43);
+    border-bottom: 2px solid rgb(43, 43, 43);
+    margin-left: -251px;
+    height: 66px;
+    background-color: white;
+    width: 1663px;
+}       
+
+.awards-images div {
+    margin-right: 50px;
+}
+
+.limundovci-image {
+    margin-top: 20px;
+    justify-content: center;
+    width: 100%;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    width: 1663px;
+    margin-left: -250px;
+    height: 39px;
+}
+
+.limundovci-image img {
+    margin-left: 288px;
+}
+
+.trustedmark img {
+    width: 195px;
+    margin-left: 535px;
+}
+
+.awards-images img:hover {
+    opacity: 0.7;
+}
+
+
+
+
+
+.lista-linkova {
+    display: flex;
+    margin-top: 30px;
+}
+
+.naslov-link {
+    border-left: 1px dashed rgba(179, 0, 0, 0.2);
+    border-right: 1px dashed rgba(179, 0, 0, 0.2);
+    border-width: thin;
+    width: 165px;
+    cursor: pointer;
+   
+}
+
+.naslov {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.naslov a {
+    text-decoration: none;
+    font-size: 16px;
+    color :rgb(92, 92, 92);
+}
+
+.naslov a:hover {
+    text-decoration: underline;
+    color :rgb(216, 69, 69);
+}
+
+.link li {
+    list-style-type: none;
+    text-align: center;
+    margin-left: -40px;
+    margin-bottom: 6px;
+    border-radius: 5px;
+    padding-top: 3px;
+    padding-bottom: 5px;
+}
+
+.link a {
+    text-decoration: none;
+    text-align: center;
+    font-size: 13px;
+    color :rgb(92, 92, 92);
+}
+
+.link li:hover {
+    background-color: rgba(179, 0, 0, 0.6);
+    border-radius: 5px;
+    color: white;
+}
+
+.link li:hover a {
+    color: white;
+}
+
+.link1 {
+    width: 155px;
+}
+
+.link2 {
+    width: 165px;
+}
+
+.link3 {
+    width: 135px;
+}
+
+.link4 {
+    width: 145px;
+}
+
+.link5 {
+    width: 180px;
+}
+
+.link6 {
+    width: 175px;
+}
+
+.link7 {
+    width: 195px;
+}
+
+.banks {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    width: 1744px;
+    margin-left: -331px;
+    background-color: rgb(255, 255, 255);
+    height: 50px;
+    
+}
+
+
+
+.banks .bank {
+    margin-left: 80px;
+}
+
+.banks .bank:hover {
+    opacity: 0.7;
+}
+
+.banks .bank1 img {
+    width: 200px;
+    margin-top: 5px;
+}
+
+.banks .bank2 img {
+    width: 140px;
+    margin-top: 2px;
+}
+
+.banks .bank3 img {
+    width: 180px;
+    margin-top: 5px;
+}
+
+.banks .bank4 img {
+    width: 90px;
+    margin-top: 9px;
+}
+
+.banks .bank5 img {
+    width: 150px;
+    margin-top: -12px;
+}
+
+.details .limundo-detalji {
+    justify-content: start;
+    margin-top: 20px;
+}
+
+.limundo-detalji address {
+    display: block;
+    font-style: italic;
+    font-size: 12px;
+}
+
+
+.date {
+    height: 20px;
+    margin-top: 0px;
+}
+
+.date a {
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+}
+
